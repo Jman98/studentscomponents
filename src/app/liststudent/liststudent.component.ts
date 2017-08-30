@@ -6,7 +6,12 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
   styleUrls: ['./liststudent.component.css']
 })
 export class ListstudentComponent implements OnInit {
-@Output() ListStudent = new EventEmitter();
+@Output() ListStudents = new EventEmitter<any>();
+flag;
+
+listStudents(){
+
+}
 
   constructor() { }
 

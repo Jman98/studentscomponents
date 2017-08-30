@@ -12,7 +12,12 @@ export class AddstudentComponent implements OnInit {
     studLname: string;
     studProg: string;
     studYr: number;
-    
+    @Output() clicked = new EventEmitter<any>();
+    flag = '';
+    addStudent() {
+      this.clicked.emit({mode: this.flag});
+
+    }
 
   constructor() { }
 
